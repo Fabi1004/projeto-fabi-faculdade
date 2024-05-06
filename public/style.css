@@ -1,0 +1,253 @@
+*{
+    font-family: "Kode Mono", monospace;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* Responsivo */
+@media (max-width: 768px) {
+  body.fundo{
+    width: 50vh !important;
+    height: 90vh;
+    background: linear-gradient(to right, #D1C4E9 , #FFEEEE );
+  }
+  .modal, .modal_fora, .modal_cadastro {
+      width: 90%; 
+      max-width: 90%;
+      left: 50%;
+      top: 50%;
+      font-size: 15px;
+      transform: translate(-50%, -50%);
+  }
+
+  .modal_fora {
+      width: 95%;
+      max-width: 95%;
+      height: auto;
+  }
+
+  .modal_cadastro{
+    height: auto;
+  }
+  .modal_titulo{
+    font-size: 30px !important;
+  }
+
+  .fundo {
+      height: auto;
+  }
+
+  input {
+      width: 90%;
+  }
+
+  .ajusteColuna{
+    position: static !important;
+  }
+
+  .label_menu {
+      width: 90%;
+  }
+}
+
+/* login */
+.modal{
+    background: #fff;
+    width: 400px;
+    border-radius: 4px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.modal_fora{
+  background: linear-gradient(to right, #D1C4E9 , #FFEEEE );
+  width: 430px;
+  height: 380px;
+  border-radius: 4px;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+body.fundo{
+    width: 100vh;
+    height: 96vh;
+    background: linear-gradient(to right, #D1C4E9 , #FFEEEE );
+  }
+.modal_titulo{
+    text-align: center;
+    font-size: 40px;
+    font-family: "Kode Mono", monospace;
+}
+.modal_senha_titulo{
+  text-align: center;
+  font-family: "Kode Mono", monospace;
+}
+label{
+  display: flex;
+  margin-top: 20px;
+}
+input{
+  margin-top: 5px;
+    display: block;
+    width: 360px;
+    height: 30px;
+    font-size: 20px;
+}
+input[type=submit] {
+  margin-top: 30px;
+    width: 200px;
+    font-size: 20px;
+    height: 50px;
+    background:#1E88E5;
+    border-radius: 4px;
+    border: none;
+    color: #e8e8e8;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.centralizar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.alinhar{
+justify-content: end;
+display: flex;
+margin: 0px 4px 12px 0px;
+font-size: 14px;
+}
+a{
+  text-decoration: none;
+  color: black ;
+}
+
+/* icones */
+.input-with-icon {
+  position: relative;
+}
+
+/* .input-with-icon input[type="email"] {
+  padding-left: 30px; 
+} */
+.input-with-icon input{
+  padding-left: 30px; 
+}
+.input-with-icon a {
+  padding-left: 30px; 
+}
+.input-with-icon i {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* Menu */
+div.titulo_menu{
+  height: 20px;
+  display: flex;
+  margin: 20px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#menu{
+  background: #D1C4E9 ;
+ max-width: 300px;
+  height: 100vh;
+  display:flex;
+  flex-direction: column;
+}
+.label_menu{
+  width: 250px;
+  height: 20px;
+  display: flex;
+  background: #fff;
+  padding: 20px;
+  margin: 20px ;
+  border-radius: 4px;
+}
+#menu a{
+  text-decoration: none;
+  color: black ;
+  align-items: center;
+  text-align: center;
+}
+body#menu_conteudo{
+  display: flex;
+  flex-direction: row;
+}
+
+/* Conteudo principal */
+.conteudo{
+  margin: 10px;
+}
+
+/* Cadastro */
+.modal_cadastro{
+  background: #fff;
+  width: 900px;
+  border-radius: 4px;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.coluna{
+  margin-left: 35px;
+  display: inline-block;
+  justify-content: space-between;
+}
+
+.ajusteColuna{
+  position: absolute;
+  top: 71px;
+}
+
+.voltar{
+  margin-top: 20px;
+}
+
+/* Tabela */
+body.tabela{
+  background: linear-gradient(to right, #D1C4E9 , #FFEEEE );
+  margin: 30px;
+}
+
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+th{
+  background-color: #6A1B9A;
+  color:#fff;
+  padding: 10px;
+}
+td {
+  background-color: #BA68C8;
+}
+td{
+  padding: 0px 20px 0px 20px;
+}
+
+.acao{
+  display: flex;
+  flex-direction:row ;
+  padding: 10px;
+  margin: 5px;
+  background:#1E88E5;
+  color: #fff;
+} 
+h1.tabTitulo{
+  margin: 20px;
+}
+

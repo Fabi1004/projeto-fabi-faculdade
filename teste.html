@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editar Candidato</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Editar Candidato</h1>
+    <form action="/editar/${id}" method="POST" enctype="multipart/form-data">
+      <label for="descricao">Nome: </label>
+      <input
+        type="text"
+        id="novaNome"
+        name="novaNome"
+        value="${candidado.nome}"
+      />
+
+      <label for="sobrenome">Sobrenome</label>
+      <input
+        type="text"
+        id="novoSobrenome"
+        name="novoSobrenome"
+        value="${candidado.sobrenome}"
+      />
+
+      <label for="telefone">Telefone</label>
+      <input
+        type="text"
+        id="novoTelefone"
+        name="novoTelefone"
+        value="${candidado.telefone}"
+      />
+
+      <label for="email">E-mail</label>
+      <input
+        type="text"
+        id="novoEmail"
+        name="novoEmail"
+        value="${candidado.email}"
+      />
+
+      <label for="imagemCandidato">Imagem Candidato</label>
+      <img
+        src="/uploads/${candidado.imagemCandidato}"
+        alt="Imagem do Candidato"
+        style="width: 100px"
+      /><br />
+      <input type="file" name="novaImagem" id="novaImagem" /><br />
+
+      <label for="novaImagem">Nova imagem do Candidato</label>
+      <input type="file" name="novaImagem" id="novaImagem" /><br />
+      <input type="submit" value="Salvar" />
+    </form>
+  </body>
+</html>

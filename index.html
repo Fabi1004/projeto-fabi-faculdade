@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Login</title>
+  </head>
+  <body class="fundo">
+    <div class="modal_fora">
+      <div class="modal">
+        <form action="/login" method="post" autocomplete="on">
+          <h1 class="modal_titulo">Login</h1>
+          <label>E-mail</label>
+          <div class="input-with-icon">
+            <i class="fa fa-user"></i>
+            <input
+              id="email"
+              type="email"
+              placeholder="Insira o e-mail"
+              name="email"
+            />
+          </div>
+          <label>Senha</label>
+          <div class="input-with-icon">
+            <i class="fa fa-lock"></i>
+            <input
+              id="senha"
+              type="password"
+              placeholder="Insira a senha"
+              name="senha"
+            />
+          </div>
+          <div class="alinhar">
+            <div class="input-with-icon">
+              <i class="fa fa-envelope-o"></i>
+              <a href="/senha">Esqueci minha senha</a>
+            </div>
+          </div>
+          <div class="centralizar">
+            <input class="centralizar submit" type="submit" name="submit" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

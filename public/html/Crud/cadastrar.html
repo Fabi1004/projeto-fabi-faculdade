@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Cadastro Candidato</title>
+  </head>
+  <body class="fundo">
+    <div>
+      <div class="modal_cadastro">
+        <h1 class="modal_titulo">Cadastro Candidato</h1>
+        <form action="/cadastro" method="post" autocomplete="on">
+          <div class="coluna">
+            <label>Nome</label>
+            <div class="input-with-icon">
+              <i class="fa fa-user"></i>
+              <input
+                id="nome"
+                type="nome"
+                placeholder="Insira o nome"
+                name="nome"
+              />
+            </div>
+            <label>Sobrenome</label>
+            <div class="input-with-icon">
+              <i class="fa fa-user"></i>
+              <input
+                id="sobrenome"
+                type="sobrenome"
+                placeholder="Insira o sobrenome"
+                name="sobrenome"
+              />
+            </div>
+            <label>E-mail</label>
+            <div class="input-with-icon">
+              <i class="fa fa-envelope-o"></i>
+              <input
+                id="email"
+                type="email"
+                placeholder="Insira o e-mail"
+                name="email"
+              />
+            </div>
+          </div>
+          <div class="coluna">
+            <label>Telefone</label>
+            <div class="input-with-icon">
+              <i class="fa fa-phone"></i>
+              <input
+                id="telefone"
+                type="telefone"
+                placeholder="Insira o telefone"
+                name="telefone"
+              />
+            </div>
+            <label>Endereço</label>
+            <div class="input-with-icon">
+              <i class="fa fa-street-view"></i>
+              <input
+                id="endereco"
+                placeholder="Insira Endereço"
+                name="endereco"
+              />
+            </div>
+            <label>Data de nascimento</label>
+            <div class="input-with-icon">
+              <i class="fa fa-calendar"></i>
+              <input
+                id="nascimento"
+                placeholder="Insira sua data de nascimento"
+                name="nascimento"
+              />
+            </div>
+          </div>
+          <div class="centralizar">
+            <input class="centralizar submit" type="submit" value="Cadastrar" />
+          </div>
+          <div class="centralizar">
+            <a class="voltar" href="/menu">Voltar</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
